@@ -1,4 +1,8 @@
-# nextjs-starter
+# Bootcamp Fullstack Final Project
+Specification [slides](https://docs.google.com/presentation/d/17eHj42dNT3R_u3p9I4oFSyp9w14m4tVIhGHRuaIDZcc/edit?usp=sharing))
+
+
+# nextjs-starter documentations
 
 ## Stack
 
