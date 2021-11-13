@@ -5,6 +5,8 @@ import classes from "./IndexPage.module.css";
 const IndexPage = () => {
   const [payload, setPayload] = React.useState("");
 
+  const data = fetch('api/cats');
+
   React.useEffect(() => {
     // Example how to create page without ssr
     helloWorld().then((resp) => {
