@@ -5,8 +5,6 @@ import classes from "./IndexPage.module.css";
 const IndexPage = () => {
   const [payload, setPayload] = React.useState("");
 
-  const data = fetch('api/cats');
-
   React.useEffect(() => {
     // Example how to create page without ssr
     helloWorld().then((resp) => {
@@ -16,13 +14,14 @@ const IndexPage = () => {
 
   return (
     <>
-      <h2 className={classes.centerText}>Welcome to Next.js!</h2>
+      <h2 className={classes.centerText}>Welcome to the Furry Friend Home!</h2>
       <h3>
-        This page is static rendered, because all API calls are made in
-        useEffect
+        We help find homes for the cats and kittens that need a family. Take a look 
+        around to see if you want to help give one of our friends a forever home!
       </h3>
       <h4>{payload}</h4>
-      <p>You can tell because the text above flashes on page refresh</p>
+      <p> Contact us at 123-123-1234 or furryfriend@mail.com for more information!</p>
+      <img src="/cat.jpg"/>
     </>
   );
 };
