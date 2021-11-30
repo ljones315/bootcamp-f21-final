@@ -2,11 +2,15 @@ import mongo from "../../../server/mongodb/mongo";
 
 export default async function handler(req, res) {
   const db = await mongo();
-  const cats = db.collection('cat');
+  const cats = db.collection("cat");
 
-  const cat = await cats.findOne();
+  let name = req.query.name;
+  let findOptions = {};
+  if (name) {
+    findOptions.name = name;
+  }
 
-  console.log("cat: " + cat.name);
+  const cat = await cats.find(findOptions).toArray();
 
-  res.status(200);
+  res.status(200).json(cat);
 }
