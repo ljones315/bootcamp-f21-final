@@ -11,11 +11,11 @@ export default class Fetch extends React.Component  {
         console.log(data);
         const catObject = data.map(feature =>
             <div>
-                <li>catObject.name</li>
-                <li>catObject.age</li>
-                <li>catObject.location</li>
-                <li>catObject.breed</li>
-                if (catObject.isAdopted == false) {
+                <li>feature.name</li>
+                <li>feature.age</li>
+                <li>feature.location</li>
+                <li>feature.breed</li>
+                if (feature.isAdopted == false) {
                     <li>Not adopted</li>
                 } else {
                     <li>Adopted</li>
