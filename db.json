@@ -7,13 +7,13 @@
     {"name": "Justin", "age" : 4, "isAdopted": false, "location" : "Oregon"}
   ],
   "adoptions": [
-    {"catName": "Joe", "adopterName": "Eric Lewis", "location" : "Atlanta, GA", "email": "ericlewis@gmail.com", 
+    {"catName": "Joe", "adopterName": "Eric Lewis", "location" : "Atlanta, GA", "email": "ericlewis@gmail.com", "phoneNumber": "404-758-9867", 
     "additionalInfo" : "Eric Lewis is a software engineering at Microsoft."},
-    {"catName": "Joe", "adopterName": "Daniel Green", "location" : "Atlanta, GA", "email": "danielgreen@gmail.com", 
+    {"catName": "Joe", "adopterName": "Daniel Green", "location" : "Atlanta, GA", "email": "danielgreen@gmail.com", "phoneNumber": "404-386-2176",
     "additionalInfo" : "Daniel Green is a computer science professor at Georgia Tech."},
-    {"catName": "Milo", "adopterName": "Jordan Davis", "location" : "Marietta, GA", "email": "jordandavis@gmail.com", 
+    {"catName": "Milo", "adopterName": "Jordan Davis", "location" : "Marietta, GA", "email": "jordandavis@gmail.com", "phoneNumber": "404-921-3812",
     "additionalInfo" : "Jordan is an analyst at JP Morgan."},
-    {"catName": "Justin", "adopterName": "Vince Howard", "location" : "Macon, GA", "email": "vincehoward@gmail.com", 
+    {"catName": "Justin", "adopterName": "Vince Howard", "location" : "Macon, GA", "email": "vincehoward@gmail.com", "phoneNumber": "404-213-8739",
     "additionalInfo" : "Vince is a manager at Publix."}
   ]
 }

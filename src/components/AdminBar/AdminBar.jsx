@@ -38,9 +38,9 @@ export default function AdminBar() {
       <button type = "Submit" onClick={handleSubmit}>Submit</button>
       {data.map(feature =>
               <div className={styles.card}>
-                  <li>{feature.adopterName}</li>
-                  <li>{feature.location}</li>
-                  <li>{feature.email}</li>
+                  <li>Name: {feature.adopterName}</li>
+                  <li>Location: {feature.location}</li>
+                  <li>Email: {feature.email}</li>
               </div>)}
     </div>
     )
