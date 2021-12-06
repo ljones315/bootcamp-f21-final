@@ -1,7 +1,19 @@
 {
   "cat": [
     {"name": "Joe", "age" : 10, "isAdopted": false, "location" : "Georgia"},
-    {"name": "Bob", "age" : 12, "isAdopted": true, "location" : "Florida"},
-    {"name": "Milo", "age" : 11, "isAdopted": true, "location" : "Arizona"}
+    {"name": "Bob", "age" : 12, "isAdopted": false, "location" : "Florida"},
+    {"name": "Milo", "age" : 11, "isAdopted": false, "location" : "Arizona"},
+    {"name": "Archie", "age" : 7, "isAdopted": false, "location" : "Virginia"},
+    {"name": "Justin", "age" : 4, "isAdopted": false, "location" : "Oregon"}
+  ],
+  "adoptions": [
+    {"catName": "Joe", "adopterName": "Eric Lewis", "location" : "Atlanta, GA", "email": "ericlewis@gmail.com", 
+    "additionalInfo" : "Eric Lewis is a software engineering at Microsoft."},
+    {"catName": "Joe", "adopterName": "Daniel Green", "location" : "Atlanta, GA", "email": "danielgreen@gmail.com", 
+    "additionalInfo" : "Daniel Green is a computer science professor at Georgia Tech."},
+    {"catName": "Milo", "adopterName": "Jordan Davis", "location" : "Marietta, GA", "email": "jordandavis@gmail.com", 
+    "additionalInfo" : "Jordan is an analyst at JP Morgan."},
+    {"catName": "Justin", "adopterName": "Vince Howard", "location" : "Macon, GA", "email": "vincehoward@gmail.com", 
+    "additionalInfo" : "Vince is a manager at Publix."}
   ]
 }
