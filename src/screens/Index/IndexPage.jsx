@@ -3,26 +3,13 @@ import { helloWorld } from "../../actions/General";
 import classes from "./IndexPage.module.css";
 
 const IndexPage = () => {
-  const [payload, setPayload] = React.useState("");
-
   const data = fetch('api/cats');
-
-  React.useEffect(() => {
-    // Example how to create page without ssr
-    helloWorld().then((resp) => {
-      setPayload(resp);
-    });
-  }, []);
 
   return (
     <>
-      <h2 className={classes.centerText}>Welcome to Next.js!</h2>
-      <h3>
-        This page is static rendered, because all API calls are made in
-        useEffect
-      </h3>
-      <h4>{payload}</h4>
-      <p>You can tell because the text above flashes on page refresh</p>
+      <h2 className={classes.centerText}>Animal Shelter!</h2>
+      
+      <p>Bootcamp animal shelter</p>
     </>
   );
 };

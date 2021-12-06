@@ -1,9 +1,9 @@
 import fetch from "node-fetch"
-const baseURL = "localhost:3000/api/"
+// baseURL = "localhost:3000/api/"
 import React from 'react'
 
-export default class Fetch extends React.Component  {
 
+export default class Fetch extends React.Component  {
 
     async componentDidMount() {
         const response = await fetch(`${baseURL}/cats`);

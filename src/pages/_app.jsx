@@ -5,7 +5,7 @@ import Head from "next/head";
 import Router from "next/router";
 import { getCurrentUser } from "../actions/User";
 import urls from "../../utils/urls";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar/Navbar";
 import "focus-visible/dist/focus-visible.min.js";
 import "normalize.css";
 import "../../public/static/styles/App.css";
@@ -16,7 +16,7 @@ const MyApp = ({ Component, pageProps, router, currentUser }) => (
       <title>Next.js-Starter</title>
     </Head>
     <div className="App">
-      <Header loggedIn={currentUser != null} currentRoute={router.asPath} />
+      <Navbar />
       <div className="Content">
         <Component {...pageProps} currentUser={currentUser} />
       </div>

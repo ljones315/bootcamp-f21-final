@@ -1,0 +1,7 @@
+{
+  "cat": [
+    {"name": "Joe", "age" : 10, "isAdopted": false, "location" : "Georgia"},
+    {"name": "Bob", "age" : 12, "isAdopted": true, "location" : "Florida"},
+    {"name": "Milo", "age" : 11, "isAdopted": true, "location" : "Arizona"}
+  ]
+}
