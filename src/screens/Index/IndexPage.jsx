@@ -9,7 +9,6 @@ const IndexPage = () => {
         We help find homes for the cats and kittens that need a family. Take a look 
         around to see if you want to help give one of our friends a forever home!
       </h3>
-      <h4>{payload}</h4>
       <p> Contact us at 123-123-1234 or furryfriend@mail.com for more information!</p>
       <img src="/cat.jpg"/>
     </>
