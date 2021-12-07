@@ -7,22 +7,24 @@ export default async function handler(req, res) {
     let params = req.query;
 
     let name = params.name;
-    console.log(name);
-    console.log(params);
-
-    const findOptions = { "name" : name };
+    
+    let findOptions = {};
+    
+    if (name) {
+       findOptions.name = name ;
+    }
 
     const application = await applications.find(findOptions).toArray();
 
-    console.log(application);
+    
 
     res.status(200).json(application);
   } else if (req.method === "POST") {
     // const data = req.body;
-    console.log(req.body);
+    console.log(req.query);
 
-    applications.insertOne(req.query);
-    res.send(req.query);
+    applications.insertOne(JSON.parse(req.body));
+    res.send(req.body)
     res.status(200);
   }
 }

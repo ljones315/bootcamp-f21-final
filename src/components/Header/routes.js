@@ -2,7 +2,7 @@ import urls from "../../../utils/urls";
 
 const routes = [
   {
-    name: "Home",
+    name: "About",
     link: urls.pages.index,
     auth: false,
     atEnd: false,
