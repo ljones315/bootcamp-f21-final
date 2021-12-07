@@ -16,6 +16,7 @@ export default function AdoptPage() {
                         {
                             feature.isAdopted == false ? <li> Not adopted</li> : <li> Adopted</li>
                         }
+                        <li></li>
                     </div>
                     )
                     setCat(catObject);

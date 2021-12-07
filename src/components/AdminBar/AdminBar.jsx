@@ -10,7 +10,6 @@ export default function AdminBar() {
       setSearch(e.target.value);
     };
     const handleSubmit = (e) => {
-      console.log("submit button clicked")
       const newData = data.filter(e => e.catName === search)
       setData([...newData])
     };
@@ -18,19 +17,10 @@ export default function AdminBar() {
       let url = "http://localhost:3001/adoptions"
       fetch(url)
         .then(response => response.json()) 
-        .then(object => {
-            /*const item = object.map(feature =>
-              <div className={styles.card}>
-                  <li>{feature.adopterName}</li>
-                  <li>{feature.location}</li>
-                  <li>{feature.email}</li>
-              </div>
-              )*/
-              setData(object)
-        })
-    ,[]    
-    })
-
+        .then(object => 
+              setData(object));
+        }, [])
+    
     return (
     <div>
       <h1>Applicants for Adopting Cats</h1>
