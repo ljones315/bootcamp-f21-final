@@ -3,6 +3,7 @@
 To use the app locally, set up these environment variables first:
 
 MONGO_DB=mongodb+srv://our-shared-user:petadoption123@pet-adoption.bztvf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 DB_NAME=nextjs
 
 # Bootcamp Fullstack Final Project
