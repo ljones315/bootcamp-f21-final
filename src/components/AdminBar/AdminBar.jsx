@@ -19,17 +19,9 @@ export default function AdminBar() {
       fetch(url)
         .then(response => response.json()) 
         .then(object => {
-            /*const item = object.map(feature =>
-              <div className={styles.card}>
-                  <li>{feature.adopterName}</li>
-                  <li>{feature.location}</li>
-                  <li>{feature.email}</li>
-              </div>
-              )*/
               setData(object)
         })
-    ,[]    
-    })
+      } ,[])
 
     return (
     <div>
