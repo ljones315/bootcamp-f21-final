@@ -15,7 +15,7 @@ export default function AdminBar() {
       setData([...newData])
     };
     useEffect(() => {
-      let url = "http://localhost:3001/adoptions"
+      let url = "api/applications/"
       fetch(url)
         .then(response => response.json()) 
         .then(object => {
@@ -38,7 +38,7 @@ export default function AdminBar() {
       <button type = "Submit" onClick={handleSubmit}>Submit</button>
       {data.map(feature =>
               <div className={styles.card}>
-                  <li>Name: {feature.adopterName}</li>
+                  <li>Name: {feature.name}</li>
                   <li>Location: {feature.location}</li>
                   <li>Email: {feature.email}</li>
               </div>)}

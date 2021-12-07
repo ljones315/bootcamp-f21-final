@@ -51,9 +51,9 @@ export default function App() {
            <p>Name</p>
            <input name="name" onChange={handleChange}/>
            <p>Location</p>
-           <input name="Location" onChange={handleChange}/>
+           <input name="location" onChange={handleChange}/>
            <p>Email</p>
-           <input name="Email" onChange={handleChange}/>
+           <input name="email" onChange={handleChange}/>
            <p>Phone#</p>
            <input name="phone" onChange={handleChange}/>
          </label>

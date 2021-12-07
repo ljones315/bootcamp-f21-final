@@ -7,14 +7,16 @@ export default async function handler(req, res) {
     let params = req.query;
 
     let name = params.name;
-    console.log(name);
-    console.log(params);
-
-    const findOptions = { "name" : name };
+    
+    let findOptions = {};
+    
+    if (name) {
+       findOptions.name = name ;
+    }
 
     const application = await applications.find(findOptions).toArray();
 
-    console.log(application);
+    
 
     res.status(200).json(application);
   } else if (req.method === "POST") {
